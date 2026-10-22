@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma'sum Nawawi | Full-Stack Web Developer & Problem Solver</title>
+  <meta name="description" content="Portofolio resmi Ma'sum Nawawi - Mahasiswa Teknik Informatika & Web Developer berbasis di Kebumen. Merancang sistem web fungsional untuk UMKM dan komunitas.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/profile.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-dark text-light antialiased selection:bg-purple selection:text-white">
+
+  <!-- Ambient Glow Gradients -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar-wrapper" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-box">MN</span>
+        <span class="logo-text">Nawawi<span class="dot-accent">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-item active">Beranda</a>
+        <a href="#about" class="nav-item">Tentang</a>
+        <a href="#portfolio" class="nav-item">Portofolio</a>
+        <a href="#skills" class="nav-item">Tech Stack</a>
+        <a href="#contact" class="nav-item">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/6285609131995?text=Halo%20Nawawi,%20saya%20melihat%20portofolio%20Anda%20dan%20ingin%20berdiskusi" target="_blank" class="btn btn-sm btn-glow">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Konsultasi</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-indicator"></span>
+            <span class="badge-text"><i class="fa-solid fa-sparkles text-purple"></i> Ready to Innovate & Build</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo, Saya <br>
+            <span class="gradient-text">Ma'sum Nawawi</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">Fokus: </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-desc">
+            Mahasiswa S1 Teknik Informatika UMNU Kebumen & praktisi web. 
+            Fokus membangun sistem dan aplikasi fungsional yang menyelesaikan 
+            masalah nyata—mulai dari pelacakan alur produksi konveksi hingga digitalisasi komunitas pesantren.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#portfolio" class="btn btn-primary btn-glow">
+              <i class="fa-solid fa-rocket"></i>
+              <span>Lihat Projek Saya</span>
+            </a>
+            <a href="assets/docs/CV_Masum_Nawawi.pdf" download="CV_Masum_Nawawi.pdf" class="btn btn-secondary">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Unduh CV</span>
+            </a>
+            <a href="https://github.com/Maksumnawawi" target="_blank" class="btn btn-icon" title="Profil GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://instagram.com/naw.wawiii_" target="_blank" class="btn btn-icon" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+
+          <div class="tech-pills-row">
+            <span class="pill-label">Tech Core:</span>
+            <span class="pill-tag"><i class="fa-brands fa-node-js text-green"></i> Node.js</span>
+            <span class="pill-tag"><i class="fa-solid fa-server text-blue"></i> Express</span>
+            <span class="pill-tag"><i class="fa-brands fa-js text-yellow"></i> JavaScript</span>
+            <span class="pill-tag"><i class="fa-solid fa-database text-cyan"></i> SQL Database</span>
+            <span class="pill-tag"><i class="fa-solid fa-qrcode text-purple"></i> QR Engine</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-card">
+              <img src="assets/images/profile.png" alt="Ma'sum Nawawi" class="avatar-img">
+              <div class="avatar-overlay"></div>
+              
+              <!-- Floating Badges -->
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="badge-info">
+                  <span class="badge-title">IPK 3.81 / 4.00</span>
+                  <span class="badge-sub">Teknik Informatika UMNU</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon"><i class="fa-solid fa-code-commit"></i></div>
+                <div class="badge-info">
+                  <span class="badge-title">Real-World Problem Solver</span>
+                  <span class="badge-sub">UMKM & Komunitas Tested</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS COUNTER STRIP ================= -->
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="stat-data">
+            <div class="stat-number" data-target="4">0</div>
+            <span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Sistem & Aplikasi Nyata Dibangun</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-medal"></i></div>
+          <div class="stat-data">
+            <div class="stat-number">3.81</div>
+          </div>
+          <p class="stat-label">IPK Akademik Teknik Informatika</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-users-gear"></i></div>
+          <div class="stat-data">
+            <div class="stat-number" data-target="2">0</div>
+            <span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Sektor Usaha & Komunitas Terdampak</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="stat-data">
+            <div class="stat-number">100</div>
+            <span class="stat-plus">%</span>
+          </div>
+          <p class="stat-label">Fokus Solutif & Siap Kolaborasi</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">✨ Profil & Latar Belakang</span>
+          <h2 class="section-title">Tentang <span class="gradient-text">Ma'sum Nawawi</span></h2>
+          <p class="section-desc">Menerjemahkan ide dan tantangan operasional menjadi arsitektur sistem digital yang rapi dan mudah digunakan.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="card-icon-header">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+            <h3>Siapa Saya?</h3>
+            <p>
+              Saya adalah mahasiswa S1 Teknik Informatika Semester 5 di <strong>Universitas Ma'arif Nahdlatul Ulama (UMNU) Kebumen</strong> dan santri di <strong>PonPes Al Falah, Somalangu</strong>.
+            </p>
+            <p>
+              Berangkat dari latar belakang SMK Multimedia dan kecintaan pada eksplorasi teknologi, saya memiliki kombinasi unik: <strong>pemahaman logika arsitektur sistem (backend & database)</strong> yang dibalut dengan <strong>kepekaan estetika visual antarmuka pengguna</strong>.
+            </p>
+            <div class="key-points">
+              <div class="point-item">
+                <i class="fa-solid fa-check-circle text-purple"></i>
+                <span>Ketelitian tinggi dalam alur data dan pengarsipan berkas.</span>
+              </div>
+              <div class="point-item">
+                <i class="fa-solid fa-check-circle text-purple"></i>
+                <span>Mentalitas <em>"berguna dulu"</em>—mengutamakan solusi langsung yang meringankan kerja orang lain.</span>
+              </div>
+              <div class="point-item">
+                <i class="fa-solid fa-check-circle text-purple"></i>
+                <span>Jiwa Technopreneur: berpikir bagaimana teknologi mendatangkan nilai bisnis dan kemitraan berkelanjutan.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="card-icon-header">
+              <i class="fa-solid fa-timeline"></i>
+            </div>
+            <h3>Jejak Langkah & Pengalaman</h3>
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2024 — Sekarang</span>
+                  <h4>S1 Teknik Informatika — UMNU Kebumen</h4>
+                  <p>Fokus studi Manajemen Basis Data, Pemrograman Web/Sistem Informasi, dan Technopreneurship. IPK Berjalan: <strong>3.81 / 4.00</strong>.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2023</span>
+                  <h4>Balai Latihan Kerja (BLK) Kebumen</h4>
+                  <p>Praktik Kerja Lapangan (PKL) Media & Administrasi Digital: Pengelolaan arsip aset digital dan publikasi instansi.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2023</span>
+                  <h4>Syifana Vision Kebumen</h4>
+                  <p>PKL Dokumentasi & Media Kreatif: Manajemen peralatan visual, produksi media, dan penataan arsip file digital.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">Lulus 2024</span>
+                  <h4>SMK Al Falah Sumberadi</h4>
+                  <p>Jurusan Multimedia: Pondasi desain grafis, editing video, dan dasar komputasi terstruktur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PORTFOLIO SHOWCASE SECTION ================= -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">💼 Hasil Karya & Implementasi</span>
+          <h2 class="section-title">Portofolio <span class="gradient-text">Showcase</span></h2>
+          <p class="section-desc">Setiap projek lahir dari masalah nyata di lapangan, dirancang dengan dedikasi penuh dari perencanaan hingga eksekusi.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-wrapper">
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">
+              <i class="fa-solid fa-layer-group"></i> Semua Projek
+            </button>
+            <button class="filter-btn" data-filter="web">
+              <i class="fa-solid fa-globe"></i> Web System
+            </button>
+            <button class="filter-btn" data-filter="mobile">
+              <i class="fa-solid fa-mobile-screen"></i> Mobile & Digitalisasi
+            </button>
+            <button class="filter-btn" data-filter="commercial">
+              <i class="fa-solid fa-briefcase"></i> Commercial & Entrepreneur
+            </button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsContainer">
+          
+          <!-- PROJECT 1: TRACKING KONVEKSI -->
+          <div class="project-card glass-panel" data-category="web">
+            <div class="project-thumb">
+              <img src="assets/images/project-konveksi.png" alt="Sistem Tracking Produksi Konveksi & Jersey">
+              <div class="thumb-badge"><i class="fa-solid fa-star text-yellow"></i> Flagship Project</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">QR Code</span>
+                <span class="tag">SQL Database</span>
+              </div>
+              <h3 class="project-title">Sistem WIP Tracking Produksi Konveksi & Jersey</h3>
+              <p class="project-summary">
+                Aplikasi web pelacakan alur kerja (Work-in-Progress) dan Surat Perintah Kerja (SPK) multi-divisi (potong, jahit, sablon) berbasis pemindaian QR Code real-time.
+              </p>
+              <div class="project-story-highlight">
+                <i class="fa-solid fa-lightbulb text-yellow"></i>
+                <span><em>"Dibuat untuk memecahkan kebingungan status pengerjaan pesanan konveksi temen. Niat utama: biar sistemnya berguna di lantai produksi."</em></span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="konveksi">
+                  <i class="fa-solid fa-circle-info"></i> Detail Studi Kasus
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-whatsapp"></i> Tanya Sistem Ini
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: APK MUJAHADAH AL FALAH -->
+          <div class="project-card glass-panel" data-category="mobile">
+            <div class="project-thumb">
+              <img src="assets/images/project-mujahadah.png" alt="Aplikasi Doa & Dzikir Mujahadah Al Falah">
+              <div class="thumb-badge"><i class="fa-solid fa-hands-praying text-cyan"></i> Social & Santri Impact</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Android App</span>
+                <span class="tag">Web Reader UI</span>
+                <span class="tag">Offline Ready</span>
+                <span class="tag">108+ Halaman</span>
+              </div>
+              <h3 class="project-title">Aplikasi Mobile & Web Doa Mujahadah Al Falah</h3>
+              <p class="project-summary">
+                Digitalisasi buku dzikir & amalan santri PonPes Al Falah Somalangu ke dalam aplikasi praktis yang responsif, dilengkapi navigasi daftar isi cepat saat ziarah maupun rutinitas ibadah.
+              </p>
+              <div class="project-story-highlight">
+                <i class="fa-solid fa-lightbulb text-yellow"></i>
+                <span><em>"Melihat jamaah saat ziarah repot membawa buku fisik. Solusinya: dibuatkan versi smartphone agar ribuan alumni & santri mudah mengaksesnya."</em></span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="mujahadah">
+                  <i class="fa-solid fa-circle-info"></i> Detail Studi Kasus
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-whatsapp"></i> Tanya Solusi Ini
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: MA PRO AUDIO -->
+          <div class="project-card glass-panel" data-category="commercial">
+            <div class="project-thumb">
+              <img src="assets/images/project-mapro.jpg" alt="Website Profil & Service MA PRO AUDIO">
+              <div class="thumb-badge"><i class="fa-solid fa-chart-line text-green"></i> Technopreneurship</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">HTML5/CSS3</span>
+                <span class="tag">Modern UI</span>
+                <span class="tag">Cost Estimator</span>
+                <span class="tag">Lead Generation</span>
+              </div>
+              <h3 class="project-title">Website Profil & Service MA PRO AUDIO</h3>
+              <p class="project-summary">
+                Website branding interaktif untuk layanan sound system hajatan, servis audio balap, dan kelistrikan. Dilengkapi kalkulator estimasi dan formulir konsultasi langsung via WhatsApp.
+              </p>
+              <div class="project-story-highlight">
+                <i class="fa-solid fa-lightbulb text-yellow"></i>
+                <span><em>"Tugas technopreneurship yang dieksekusi dengan strategi freemium kemitraan: tebar jala bikin web gratis ke alumni untuk membuka pintu referral klien baru."</em></span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="mapro">
+                  <i class="fa-solid fa-circle-info"></i> Detail Studi Kasus
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-whatsapp"></i> Diskusi Projek Web
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS & TECH STACK SECTION ================= -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">🛠️ Keahlian & Teknologi</span>
+          <h2 class="section-title">Tech Stack & <span class="gradient-text">Kemampuan Teknis</span></h2>
+          <p class="section-desc">Kombinasi perangkat keras, arsitektur backend, antarmuka visual, dan pola pikir solutif.</p>
+        </div>
+
+        <div class="bento-skills-grid">
+          <!-- Bento Box 1: Backend & Database -->
+          <div class="bento-box glass-panel bento-large">
+            <div class="bento-icon"><i class="fa-solid fa-server text-blue"></i></div>
+            <h3>Backend Engineering & Database</h3>
+            <p>Membangun alur logika server, RESTful API yang aman, serta manajemen basis data terstruktur.</p>
+            <div class="skill-chips">
+              <div class="skill-chip"><i class="fa-brands fa-node-js text-green"></i> Node.js</div>
+              <div class="skill-chip"><i class="fa-solid fa-cubes text-blue"></i> Express.js</div>
+              <div class="skill-chip"><i class="fa-solid fa-database text-cyan"></i> SQLite / SQL</div>
+              <div class="skill-chip"><i class="fa-solid fa-lock text-purple"></i> Bcrypt & Auth Session</div>
+              <div class="skill-chip"><i class="fa-solid fa-code text-yellow"></i> EJS Templating</div>
+              <div class="skill-chip"><i class="fa-solid fa-diagram-project text-green"></i> REST API Design</div>
+            </div>
+          </div>
+
+          <!-- Bento Box 2: Frontend & UI -->
+          <div class="bento-box glass-panel">
+            <div class="bento-icon"><i class="fa-solid fa-palette text-purple"></i></div>
+            <h3>Frontend & UI Design</h3>
+            <p>Antarmuka responsif, modern dark mode, dan UX yang ramah pengguna.</p>
+            <div class="skill-chips">
+              <div class="skill-chip"><i class="fa-brands fa-html5 text-orange"></i> HTML5 Semantic</div>
+              <div class="skill-chip"><i class="fa-brands fa-css3-alt text-blue"></i> Modern CSS3</div>
+              <div class="skill-chip"><i class="fa-brands fa-js text-yellow"></i> JavaScript ES6+</div>
+              <div class="skill-chip"><i class="fa-solid fa-mobile-screen text-cyan"></i> Responsive Design</div>
+              <div class="skill-chip"><i class="fa-solid fa-wand-magic-sparkles text-purple"></i> Glassmorphism</div>
+            </div>
+          </div>
+
+          <!-- Bento Box 3: Tools & Integration -->
+          <div class="bento-box glass-panel">
+            <div class="bento-icon"><i class="fa-solid fa-screwdriver-wrench text-yellow"></i></div>
+            <h3>Integrasi & Workflow Tools</h3>
+            <p>Peralatan penunjang pengembangan software yang teruji dan efisien.</p>
+            <div class="skill-chips">
+              <div class="skill-chip"><i class="fa-brands fa-git-alt text-orange"></i> Git Version Control</div>
+              <div class="skill-chip"><i class="fa-brands fa-github text-light"></i> GitHub Collaboration</div>
+              <div class="skill-chip"><i class="fa-solid fa-qrcode text-purple"></i> QR & Barcode Engine</div>
+              <div class="skill-chip"><i class="fa-solid fa-terminal text-green"></i> PowerShell / Terminal</div>
+              <div class="skill-chip"><i class="fa-solid fa-bug text-red"></i> Debugging & Testing</div>
+            </div>
+          </div>
+
+          <!-- Bento Box 4: Multimedia & Soft Skills -->
+          <div class="bento-box glass-panel bento-large">
+            <div class="bento-icon"><i class="fa-solid fa-brain text-green"></i></div>
+            <h3>Pola Pikir & Nilai Tambah (Soft Skills)</h3>
+            <p>Kelebihan utama yang membedakan dari sekadar programmer kode kaku.</p>
+            <div class="skill-chips">
+              <div class="skill-chip"><i class="fa-solid fa-lightbulb text-yellow"></i> Problem Solving Riil</div>
+              <div class="skill-chip"><i class="fa-solid fa-comments text-cyan"></i> Komunikasi & Kolaborasi</div>
+              <div class="skill-chip"><i class="fa-solid fa-magnifying-glass text-purple"></i> Ketelitian Data & Dokumen</div>
+              <div class="skill-chip"><i class="fa-solid fa-coins text-green"></i> Technopreneurship Mindset</div>
+              <div class="skill-chip"><i class="fa-solid fa-photo-film text-orange"></i> Multimedia (Video & Visual)</div>
+              <div class="skill-chip"><i class="fa-solid fa-clock text-blue"></i> Manajemen Waktu & Deadlines</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT & CALL TO ACTION ================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card glass-panel">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <span class="section-tag">💬 Hubungi Saya</span>
+              <h2 class="contact-title">Mari Berdiskusi & <br><span class="gradient-text">Bekerja Sama</span></h2>
+              <p class="contact-desc">
+                Tertarik membuat website custom, butuh sistem informasi berbasis kebutuhan UMKM, atau ingin mengajak kolaborasi? Saya siap membantu mewujudkannya.
+              </p>
+
+              <div class="contact-channels">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6285609131995?text=Halo%20Nawawi,%20saya%20tertarik%20dengan%20portofolio%20Anda" target="_blank" class="channel-item">
+                  <div class="channel-icon wa-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div class="channel-meta">
+                    <span class="channel-label">WhatsApp (Respon Cepat)</span>
+                    <span class="channel-val">+62 856-0913-1995</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/naw.wawiii_" target="_blank" class="channel-item">
+                  <div class="channel-icon ig-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="channel-meta">
+                    <span class="channel-label">Instagram Pribadi</span>
+                    <span class="channel-val">@naw.wawiii_</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Maksumnawawi" target="_blank" class="channel-item">
+                  <div class="channel-icon github-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <div class="channel-meta">
+                    <span class="channel-label">GitHub Repository</span>
+                    <span class="channel-val">github.com/Maksumnawawi</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:nawawikamvret@gmail.com" class="channel-item">
+                  <div class="channel-icon email-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="channel-meta">
+                    <span class="channel-label">Email Resmi</span>
+                    <span class="channel-val">nawawikamvret@gmail.com</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Direct Message / WhatsApp Composer Form -->
+            <div class="contact-form-wrapper">
+              <div class="form-header">
+                <h3><i class="fa-solid fa-paper-plane text-purple"></i> Kirim Pesan Cepat</h3>
+                <p>Pesan ini akan langsung disiapkan rapi ke WhatsApp saya dalam satu klik.</p>
+              </div>
+
+              <form id="contactForm" class="quick-form">
+                <div class="form-group">
+                  <label for="senderName">Nama Lengkap / Instansi</label>
+                  <input type="text" id="senderName" class="form-input" placeholder="Contoh: Pak Dosen / Budi Santoso" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectInterest">Topik Pembicaraan</label>
+                  <select id="projectInterest" class="form-input">
+                    <option value="Pembuatan Website Baru">Pembuatan Website Custom</option>
+                    <option value="Sistem Tracking / SPK Konveksi">Sistem Tracking Produksi Konveksi</option>
+                    <option value="Tawaran Kerjasama / Magang">Peluang Kerja / Magang IT</option>
+                    <option value="Konsultasi Akademik / Kampus">Diskusi Tugas & Portofolio</option>
+                    <option value="Lainnya">Topik Lainnya</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage">Isi Pesan</label>
+                  <textarea id="senderMessage" rows="4" class="form-input" placeholder="Tuliskan pesan atau kebutuhan Anda di sini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-glow">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Lanjutkan ke WhatsApp</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-text">Ma'sum Nawawi<span class="dot-accent">.</span></span>
+        <p>Full-Stack Web Developer • Teknik Informatika UMNU Kebumen</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ma'sum Nawawi. Seluruh Hak Cipta Dilindungi. Dirancang dengan dedikasi, kode bersih, dan fokus solutif.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= PROJECT DETAIL MODAL ================= -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-container glass-panel">
+      <button class="modal-close" id="modalClose" aria-label="Tutup Dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-content" id="modalContent">
+        <!-- Content will be injected dynamically by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">Berhasil!</span>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
