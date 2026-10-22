@@ -783,17 +783,27 @@ a {
 .filter-tabs-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  overflow-x: auto;
+  padding: 0.25rem 0.5rem 0.75rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.filter-tabs-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .filter-tabs {
   display: inline-flex;
-  gap: 0.5rem;
-  background: rgba(15, 23, 42, 0.7);
-  padding: 0.4rem;
-  border-radius: 1rem;
+  gap: 0.4rem;
+  background: rgba(15, 23, 42, 0.75);
+  padding: 0.35rem;
+  border-radius: 9999px;
   border: 1px solid var(--border-light);
   backdrop-filter: blur(12px);
+  white-space: nowrap;
 }
 
 .filter-btn {
@@ -802,14 +812,15 @@ a {
   color: var(--text-muted);
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 0.9rem;
-  padding: 0.6rem 1.25rem;
-  border-radius: 0.75rem;
+  font-size: 0.88rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 9999px;
   cursor: pointer;
   transition: var(--transition-fast);
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
+  white-space: nowrap;
 }
 
 .filter-btn:hover {
@@ -1430,8 +1441,24 @@ select.form-input option {
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+  }
+
+  .nav-actions .btn-sm span {
+    display: none;
+  }
+
+  .nav-actions .btn-sm {
+    padding: 0.55rem 0.75rem;
   }
 
   .nav-links {
@@ -1465,8 +1492,34 @@ select.form-input option {
     gap: 1.5rem;
   }
 
+  /* Responsive Filter Tabs: No cut-off, smooth horizontal scroll */
+  .filter-tabs-wrapper {
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .filter-tabs {
+    margin: 0;
+  }
+
+  .filter-btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
+    flex-shrink: 0;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .project-actions .btn {
+    width: 100%;
   }
 
   .bento-skills-grid {
@@ -1478,12 +1531,12 @@ select.form-input option {
   }
 
   .avatar-card {
-    width: 290px;
-    height: 380px;
+    width: 280px;
+    height: 370px;
   }
 
   .floating-badge {
-    padding: 0.4rem 0.6rem;
+    padding: 0.35rem 0.6rem;
   }
 
   .badge-top-right {
@@ -1498,6 +1551,59 @@ select.form-input option {
 
   .contact-card {
     padding: 1.75rem;
+  }
+
+  /* Modal on Mobile */
+  .modal-container {
+    padding: 1.5rem 1.15rem;
+    max-height: 85vh;
+  }
+
+  .modal-hero-img {
+    height: 180px;
+  }
+
+  .modal-title {
+    font-size: 1.35rem;
+  }
+
+  .modal-actions-bar {
+    flex-direction: column;
+  }
+
+  .modal-actions-bar .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .typewriter-container {
+    font-size: 1.05rem;
+  }
+
+  .avatar-card {
+    width: 250px;
+    height: 330px;
+  }
+
+  .badge-title {
+    font-size: 0.75rem;
+  }
+
+  .badge-sub {
+    font-size: 0.65rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
   }
 }
 
